@@ -9,11 +9,16 @@ import { LandingComponent } from './components/landing/landing.component';
 import { ProductsComponent } from './components/products/products.component';
 import { PanelTopComponent } from './components/panel-top/panel-top.component';
 import { CartComponent } from './components/cart/cart.component';
+import { DashboardComponent } from './components/admin/dashboard/dashboard.component';
+import { MenuComponent } from './components/admin/menu/menu.component';
+import { AdminProductsComponent } from './components/admin/admin-products/admin-products.component';
 
 const appRoutes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'landing', component: LandingComponent },
   { path: 'cart', component: CartComponent },
+  { path: 'admin/dashboard', component: DashboardComponent },
+  { path: 'admin/products', component: AdminProductsComponent },
   { path: '', redirectTo: '/landing', pathMatch: 'full' }
 ];
 
@@ -24,6 +29,9 @@ const appRoutes: Routes = [
     ProductsComponent,
     PanelTopComponent,
     CartComponent,
+    DashboardComponent,
+    MenuComponent,
+    AdminProductsComponent,
   ],
   imports: [
     BrowserModule,
